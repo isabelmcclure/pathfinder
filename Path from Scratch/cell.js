@@ -4,7 +4,8 @@ class Cell{
   constructor(loc){
     this.loc = new MyVector(loc.x, loc.y);
     this.isOcuppied = false;
-    this.hasParents = false;
+    this.hasParent = false;
+    this.isEmpty = true;
   }
   render(){
     this.color = "cadetBlue";
@@ -13,7 +14,9 @@ class Cell{
 
   }
 
-  addNeighbors(){
+  addNeighbors(pf, grid){
+
+
     //check in all directions
   }
 
